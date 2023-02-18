@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="drop-down">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+        <div class="bar">
+          <div class="drop-click">
+            <h3 class="drop arrow-img">
+              Features
+              <img
+                id="arrow-down"
+                class=""
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+              <img
+                id="arrow-up"
+                class="hidden"
+                src="./images/icon-arrow-up.svg"
+                alt="icon-arrow-up"
+              />
+            </h3>
+            <div id="dropped-menu" class="hidden box-style1">
+              <h3 class="drop-text">
+                <img
+                  class="icon"
+                  src="./images/icon-todo.svg"
+                  alt="icon-todo"
+                />
+                Todo List
+              </h3>
+              <h3 class="drop-text">
+                <img
+                  class="icon"
+                  src="./images/icon-calendar.svg"
+                  alt="icon-calendar"
+                />
+                Calender
+              </h3>
+              <h3 class="drop-text">
+                <img
+                  class="icon"
+                  src="./images/icon-reminders.svg"
+                  alt="icon-reminders"
+                />
+                Reminders
+              </h3>
+              <h3 class="drop-text">
+                <img
+                  class="icon"
+                  src="./images/icon-planning.svg"
+                  alt="icon-planning"
+                />
+                Planning
+              </h3>
+            </div>
+          </div>
+          <div class="drop-click">
+            <h3 class="drop arrow-img">
+              Company
+              <img
+                id="arrow-down"
+                class=""
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+              <img
+                id="arrow-up"
+                class="hidden"
+                src="./images/icon-arrow-up.svg"
+                alt="icon-arrow-up"
+              />
+            </h3>
+            <div id="dropped-menu" class="hidden box-style2">
+              <h3 class="drop-text">History</h3>
+              <h3 class="drop-text">Our Team</h3>
+              <h3 class="drop-text">Blog</h3>
+            </div>
+          </div>
+          <h3 class="drop">Careers</h3>
+          <h3 class="drop">About</h3>
+        </div>
+      </div>
+      <div class="registration">
+        <h3 class="account login">Login</h3>
+        <h3 class="account register">Register</h3>
+        <img class="slider hidden" src="./images/icon-menu.svg" alt="menu" />
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="left">
+        <div class=".mobile-contiainer">
+          <img
+            class="mobile"
+            src="./images/image-hero-mobile.png"
+            alt="image-hero-mobile"
+          />
+        </div>
+        <div class="text">
+          <h1 class="title">
+            <span>Make</span>
+            <span> remote work</span>
+          </h1>
+          <h1 class="mobile-title">Make remote work</h1>
+          <p class="dsc">
+            Get your team in sync, no matter your location. Streamline process,
+            create team rituals, and watch productivity soar.
+          </p>
+        </div>
+        <div class="assets">
+          <button>Learn More</button>
+          <div class="container">
+            <img
+              class="sponsor"
+              src="./images/client-databiz.svg"
+              alt="client-databiz"
+            />
+            <img
+              class="sponsor"
+              src="./images/client-audiophile.svg"
+              alt="client-audiophile"
+            />
+            <img
+              class="sponsor"
+              src="./images/client-meet.svg"
+              alt="client-meet"
+            />
+            <img
+              class="sponsor"
+              src="./images/client-maker.svg"
+              alt="client-maker"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img
+          class="pc"
+          src="./images/image-hero-desktop.png"
+          alt="image-hero-desktop"
+        />
+      </div>
+    </section>
+    <section class="pop hidden">
+      <div class="close">
+        <img
+          class="x"
+          src="./images/icon-close-menu.svg"
+          alt="icon-close-menu"
+        />
+      </div>
+      <!--  -------POP DROP------- -->
+      <div class="top">
+        <h3 id="pop-text" class="pop-drop">
+          Features
+          <img
+            class="pop-down"
+            src="./images/icon-arrow-down.svg"
+            alt="arrow-down"
+          />
+          <img
+            class="hidden pop-up"
+            src="./images/icon-arrow-up.svg"
+            alt="arrow-up"
+          />
+        </h3>
+        <div id="pop-dropped-menu" class="hidden">
+          <div class="pop-container">
+            <h3 class="pop-drop-text">
+              <img
+                class="pop-icon"
+                src="./images/icon-todo.svg"
+                alt="icon-todo"
+              />
+              Todo List
+            </h3>
+            <h3 class="pop-drop-text">
+              <img
+                class="pop-icon"
+                src="./images/icon-calendar.svg"
+                alt="icon-calendar"
+              />
+              Calender
+            </h3>
+            <h3 class="pop-drop-text">
+              <img
+                class="pop-icon"
+                src="./images/icon-reminders.svg"
+                alt="icon-reminders"
+              />
+              Reminders
+            </h3>
+            <h3 class="pop-drop-text">
+              <img
+                class="pop-icon"
+                src="./images/icon-planning.svg"
+                alt="icon-planning"
+              />
+              Planning
+            </h3>
+          </div>
+        </div>
+        <div>
+          <h3 id="pop-text" class="pop-drop">
+            Company
+            <img
+              class="pop-down"
+              src="./images/icon-arrow-down.svg"
+              alt="arrow-down"
+            />
+            <img
+              class="hidden pop-up"
+              src="./images/icon-arrow-up.svg"
+              alt="arrow-up"
+            />
+          </h3>
+          <div id="pop-dropped-menu" class="hidden">
+            <div class="pop-container">
+              <h3 class="pop-drop-text">History</h3>
+              <h3 class="pop-drop-text">Our Team</h3>
+              <h3 class="pop-drop-text">Blog</h3>
+            </div>
+          </div>
+        </div>
+        <h3 id="pop-text">Careers</h3>
+        <h3 id="pop-text">About</h3>
+      </div>
+      <div class="bottom">
+        <h3 class="pop-login">Login</h3>
+        <h3 class="pop-register">Register</h3>
+      </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
